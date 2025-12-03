@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portofolio M. Fadhli J.</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- AUDIO BG (opsional) -->
+    <audio id="bgm" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- NAV -->
+    <header class="nav">
+        <div class="brand">Muhammad Fadhli Juliansyah</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="#skills">Skill</a>
+            <a href="#projects">Projek</a>
+            <a href="#gallery">Galeri</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+        <div class="controls">
+            <button id="themeBtn" title="Toggle Theme">🌙</button>
+            <button id="musicBtn" title="Toggle Music">🎵</button>
+            <a href="assets/CV.pdf" download class="cv">Download CV</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <h1>Halo, Saya <span id="typing"></span></h1>
+            <p class="sub">Fadhli · Mahasiswa Teknik Mesin · Esa Unggul Tangerang</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn">Lihat Projek</a>
+                <a href="#contact" class="btn ghost">Hubungi</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="portrait" data-parallax>
+                <img src="assets/foto.jpg" alt="Foto Saya">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="reveal">Tentang Saya</h2>
+            <p class="lead reveal">Saya mahasiswa yang fokus di pengembangan web, desain UI, dan pembuatan proyek
+                kreatif. Saya suka membangun UI yang mudah digunakan dan cepat.</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section dark-section">
+        <div class="container">
+            <h2 class="reveal">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal">HTML <span class="bar"><span style="width:95%"></span></span></div>
+                <div class="skill-card reveal">CSS <span class="bar"><span style="width:90%"></span></span></div>
+                <div class="skill-card reveal">JavaScript <span class="bar"><span style="width:85%"></span></span></div>
+                <div class="skill-card reveal">React <span class="bar"><span style="width:70%"></span></span></div>
+                <div class="skill-card reveal">UI Design <span class="bar"><span style="width:80%"></span></span></div>
+                <div class="skill-card reveal">Video Editing <span class="bar"><span style="width:75%"></span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="reveal">Projek Pilihan</h2>
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <h3>Website E-Commerce</h3>
+                    <p>Landing page + checkout.</p>
+                </article>
+                <article class="project-card reveal">
+                    <h3>Aplikasi SPP</h3>
+                    <p>Manajemen pembayaran sekolah.</p>
+                </article>
+                <article class="project-card reveal">
+                    <h3>Portfolio Interaktif</h3>
+                    <p>Website personal dengan animasi.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY CAROUSEL -->
+    <section id="gallery" class="section dark-section">
+        <div class="container">
+            <h2 class="reveal">Galeri</h2>
+    
+            <div class="carousel" style="display:flex; align-items:center; justify-content:center; gap:12px;">
+                <button class="cbtn prev">‹</button>
+            
+                <div class="slides" style="overflow:hidden; width:60%; display:flex;">
+            
+                    <!-- Slide 1 -->
+                    <div class="slide" style="min-width:100%; display:flex; justify-content:center; align-items:center;">
+                        <img src="assets/gal1.jpg" style="width:50%; height:auto; border-radius:14px;">
+                    </div>
+            
+                    <!-- Slide 2 -->
+                    <div class="slide" style="min-width:100%; display:flex; justify-content:center; align-items:center;">
+                        <img src="assets/gal2.jpg" style="width:50%; height:auto; border-radius:14px;">
+                    </div>
+            
+                    <!-- Slide 3 -->
+                    <div class="slide" style="min-width:100%; display:flex; justify-content:center; align-items:center;">
+                        <img src="assets/gal3.jpg" style="width:50%; height:auto; border-radius:14px;">
+                    </div>
+            
+                </div>
+            
+                <button class="cbtn next">›</button>
+            </div>
+    
+            <!-- Thumbnails tetap -->
+            <div class="gallery-grid reveal">
+                <img src="assets/gal1.jpg" class="thumb" alt="thumb1">
+                <img src="assets/gal2.jpg" class="thumb" alt="thumb2">
+                <img src="assets/gal3.jpg" class="thumb" alt="thumb3">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="reveal">Kontak</h2>
+            <form id="contactForm" class="reveal">
+                <!-- 3D Emboss Contact (Vision Pro vibes) -->
+                <div class="emboss-contact" role="navigation" aria-label="social contact">
+                
+                    <a class="emboss-card ig" href="https://www.instagram.com/mfdliiii_/" target="_blank" rel="noopener" data-3d>
+                        <div class="emboss-inner">
+                            <!-- Instagram SVG -->
+                            <img src="assets/ig.png" class="icon" alt="">
+                            <div class="emboss-label">Instagram</div>
+                        </div>
+                    </a>
+                
+                    <a class="emboss-card wa" href="https://wa.me/6281288171427" target="_blank" rel="noopener" data-3d>
+                        <div class="emboss-inner">
+                            <!-- WhatsApp SVG -->
+                            <img src="assets/wa.png" class="icon" alt="">
+
+                            <div class="emboss-label">WhatsApp</div>
+                        </div>
+                    </a>
+                </div>
+                <p class="note" style="text-align:center;">
+                    Form ini demo — tanpa server. Nanti bisa dihubungkan ke email/Google Forms/Netlify Function.
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- IMAGE MODAL -->
+    <div id="imgModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button id="modalClose" class="modal-close">✕</button>
+            <img id="modalImg" src="" alt="preview">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© <span id="year"></span> — Fadhli • All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- SCRIPT 3D CONTACT -->
+    <script>
+        (() => {
+            const MAX_ROT = 8;   // small angle for elegance
+            const CARDS = document.querySelectorAll('[data-3d]');
+            CARDS.forEach(card => {
+                const inner = card.querySelector('.emboss-inner') || card;
+                // mouse move -> tilt
+                card.addEventListener('mousemove', e => {
+                    const r = card.getBoundingClientRect();
+                    const px = (e.clientX - r.left) / r.width;  // 0..1
+                    const py = (e.clientY - r.top) / r.height;  // 0..1
+                    const rotY = (px - 0.5) * MAX_ROT * 2; // -MAX..MAX
+                    const rotX = (0.5 - py) * MAX_ROT * 2;
+                    card.style.transform = `translateZ(0) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-8px)`;
+                    // subtle parallax for inner element
+                    inner.style.transform = `translateZ(24px) translateY(-6px)`;
+                });
+                // mouse leave -> reset
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                    inner.style.transform = 'translateZ(18px)';
+                });
+                // touch support: small tilt on touchstart, reset on touchend
+                card.addEventListener('touchstart', () => {
+                    card.style.transform = `translateZ(0) rotateX(1deg) rotateY(-1deg) translateY(-6px)`;
+                    inner.style.transform = `translateZ(24px) translateY(-6px)`;
+                });
+                card.addEventListener('touchend', () => {
+                    card.style.transform = '';
+                    inner.style.transform = 'translateZ(18px)';
+                });
+            });
+        })();
+    </script>
+    
+    </body>
+    
+    </html>
